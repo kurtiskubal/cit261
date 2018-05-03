@@ -8,11 +8,11 @@
             var numberAsText = document.getElementById("number_input").value
             var aNumber = parseInt(numberAsText)
             int remainder = aNumber%2
-            if(remainder == 0){
+            if(remainder == 0 && numberAsText != 0){
                 document.getElementById("result_display").innerHTML = numberAsText + "is even."
             }
-            else{
-                document.getElementById("result_display").innerHTML = numberAsText + "is not even."
+            else if(remainder == 1 && numberAsText != 0){
+                document.getElementById("result_display").innerHTML = numberAsText + "is odd."
             }
             
         }
@@ -29,7 +29,7 @@
         <h1>Even or Odd?</h1>
         Enter a Number: 
         <input id = "number_input"></input>
-    <button onclick = checkNumber()>Check It!</button>
+    <button onclick = "checkNumber()" >Check It!</button>
     <section id = "result_display"></section>
     
     </body>

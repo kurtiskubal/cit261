@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Calc</title>
+    
+    <script>
+        function add() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            const resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) + parseFloat(num2);
+        
+        }
+        
+        function subtract() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            const resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) - parseFloat(num2);
+            
+            }
+        function divide() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            const resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) / parseFloat(num2);
+            
+            }
+    </script>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        <input type="text" id = "input1"></input>
+        <input type="text" id = "input2"></input>
+        
+        <section>
+                    <button id="plusButton" onclick="add()">+</button>
+        
+                    <button id="subButton" onclick="subtract()">-</button>
+            
+                    <button id="divButton" onclick="divide()">/</button>
+        
+                    Result:
+        
+                    <span id="result"></span>
+
+        </section>
+
+
+
+    </body>
+    
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Kurtis's Page</title>
+    
+   
+        
+        <style> </style>
+    </head>
+    
+    
+    <body>
+    
+        <p id="display"></p>
+        <p id="display2"></p>
+        
+    </body>
+     <script>
+        const thor = {type:"hero", item:"hammer", hairColor:"blonde"};
+        const cloneThor = thor;
+        cloneThor.hairColor = "black";
+        document.getElementById("display").innerHTML = thor.hairColor;
+        document.getElementById("display2").innerHTML = cloneThor.hairColor;
+    
+    </script>
+   
+    
+</html>
