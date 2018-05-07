@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title></title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+        <div>
+            <input id = "comparedText"></input>
+            <button>Compare</button>
+        </div>
+        <div>
+            <section id = "display"></section>
+        </div>
+    </body>
+    
+    <script>
+        const pattern = /JavaScript/;
+        
+        checkPattern(inputOutput) {
+            return pattern.test(inputOutput);
+        }
+        
+        displayText() {
+            document.getElementById(display).innerHTML = checkPattern(document.getElementById(comparedText).innerHTML);
+        }
+        
+    </script>
+    
+</html>
