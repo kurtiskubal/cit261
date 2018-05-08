@@ -5,19 +5,47 @@
         <title>Move Planner</title>
     
         <style>
-    
+        
+            #buttonMain {
+                
+                background-color: lightgray;
+                width: 150px;
+                border: none;
+                box-shadow: 5px 5px #888888;
+            }
+            
+            #moveName {
+                   
+                background-color: white;
+                width: 300px;
+                height: 30px;
+                font-size: 20px;
+            
+            }
+            
+            #inputSpace {
+                
+                padding-top: 10px;
+                width: 300px;
+                
+            }
+            
         </style>
+    
+        <script defer>
+        
+        </script>
     
     </head>
     
     <body>
-    <button>Start a new move</button>
-        
-    
+        <div id = "buttonSpace">
+            <button id = "buttonMain">Start a new move</button>
+            <button id = "buttonMain">Previous Moves</button>
+        </div>
+        <div id = "inputSpace">
+            <input id = "moveName" placeholder="Please Name Your Move Here">
+        </div>
     </body>
-    
-    <script>
-        
-    </script>
     
 </html>
