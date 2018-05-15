@@ -5,6 +5,13 @@
         <title>Move Planner</title>
     
         <style>
+            
+            #header {
+                
+                padding-top: 10px;
+                width: 310px;
+                
+            }
         
             #buttonMain {
                 
@@ -32,35 +39,50 @@
                 
             }
             
+            #pageHead {
+                
+                display: inline;
+                
+            }
+            
             
         </style>
     
         <script defer>
             
-            document.getElementById("buttonMain1").addEventListener("touchstart",buttonColor);
             
-            document.getElementById("buttonMain1").addEventListener("touchend",buttonColor);
-            
-            function buttonColor() {
-                document.getElementById(buttonMain1).style.backgroundColor = "green";
-            }
-            
-            function startNewMove(button) {
-                document.getElementById(button).style.backgroundColor = "purple";
-            }
             
         </script>
     
     </head>
     
     <body>
+        
+        <div id = "header">
+        
+        <button>Edit Moves</button>
+        
+        <p id = "pageHead">Moves</p>
+            
+        <button>Add Item</button>
+        
+        </div>
+        
         <div id = "buttonSpace">
-            <button id = "buttonMain1" ontouchstart = "buttonColor()" ontouchend = "startNewMove(this)">Start a new move</button>
+        
+            <button id = "buttonMain" ontouchstart = "buttonColor()" ontouchend = 
+            "startNewMove(this)">Start a new move</button>
+            
             <button id = "buttonMain">Previous Moves</button>
+        
         </div>
+        
         <div id = "inputSpace">
+        
             <input id = "moveName" placeholder="Please Name Your Move Here">
+        
         </div>
+    
     </body>
     
 </html>
