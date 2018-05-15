@@ -12,6 +12,7 @@
                 width: 150px;
                 border: none;
                 box-shadow: 5px 5px #888888;
+                
             }
             
             #moveName {
@@ -26,21 +27,35 @@
             #inputSpace {
                 
                 padding-top: 10px;
-                width: 300px;
+                width: 310px;
+                
                 
             }
+            
             
         </style>
     
         <script defer>
-        
+            
+            document.getElementById("buttonMain1").addEventListener("touchstart",buttonColor);
+            
+            document.getElementById("buttonMain1").addEventListener("touchend",buttonColor);
+            
+            function buttonColor() {
+                document.getElementById(buttonMain1).style.backgroundColor = "green";
+            }
+            
+            function startNewMove(button) {
+                document.getElementById(button).style.backgroundColor = "purple";
+            }
+            
         </script>
     
     </head>
     
     <body>
         <div id = "buttonSpace">
-            <button id = "buttonMain">Start a new move</button>
+            <button id = "buttonMain1" ontouchstart = "buttonColor()" ontouchend = "startNewMove(this)">Start a new move</button>
             <button id = "buttonMain">Previous Moves</button>
         </div>
         <div id = "inputSpace">
