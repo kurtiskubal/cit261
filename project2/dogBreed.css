@@ -1,0 +1,50 @@
+#heading {
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#display {
+
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: lightblue;
+    font-family: Arial;
+}
+        
+#secondDisplay {
+    
+    height: 200px;        
+    width: 50%;
+    float: right;
+    background-color: lightblue;
+    font-family: Arial;
+}
+
+#crossDisplay {
+    float: left;
+    font-family: Arial;
+}
+
+
+#firstDog {
+    font-family: Arial;
+    background-color: azure;
+}
+
+#secondDog {
+    font-family: Arial;
+    background-color: azure;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+img {
+    display: block;
+}
+
+#crossBreedHead {
+    font-family: Arial;
+}
