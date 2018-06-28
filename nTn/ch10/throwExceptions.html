@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Throwing Test</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        <h1>Test</h1>
+    
+    </body>
+
+    <script>
+        
+        function squareRoot(number) {
+            'use strict';
+            if (number < 0) {
+                throw new RangeError('You cannot find the square root of negative numbers');    
+            }
+            return Math.sqrt(number);
+        }
+    
+        throw 2;
+        throw 'Up';
+        throw { toys: 'out of pram' };
+        throw new Error('Something has gone badly wrong!');
+        
+        squareRoot(121);
+        squareRoot(-1);
+        
+    </script>
+    
+</html>

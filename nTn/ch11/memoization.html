@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title></title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        function square(x){
+            square.cache = square.cache || {};
+            if (!square.cache[x]) {
+                square.cache[x] = x*x;
+            }
+            console.log(square.cache[x]);
+        }
+        
+        square(3);
+        
+        square(-11);
+        
+        console.log(square.cache);
+        
+    </script>
+    
+</html>

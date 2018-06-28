@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Debugger</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    <h1>test</h1>    
+    
+    </body>
+
+    <script>
+        
+        function amIOldEnough(age){
+            debugger;
+                if (age < 12){
+                    debugger;
+                    console.log('No, sorry.');
+                }
+                else if (age < 18) {
+                    debugger;
+                    console.log('Only if you are accompanied by an adult.');
+                }
+                else {
+                    debugger;
+                    console.log('Yep, come on in!');
+                }
+        }
+        
+        amIOldEnough(32);
+        amIOldEnough(11);
+        amIOldEnough(-1);
+        amIOldEnough(21);
+        
+        
+    </script>
+    
+</html>
