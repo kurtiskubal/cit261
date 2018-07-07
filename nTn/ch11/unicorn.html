@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Init-Time Branching</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+    
+        function ride(){
+            if (window.unicorn) {
+                ride = function(){
+                    return 'Riding on a unicorn is the best!';
+                }
+            }
+            else {
+                ride = function(){
+                    return 'Riding on a pony is still pretty good';
+                }
+            }
+            return ride();
+        }
+        
+    </script>
+    
+</html>

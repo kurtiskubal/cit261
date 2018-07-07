@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Dicey Promise</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+    
+        const dice = {
+            sides: 6,
+            roll() {
+                return Math.floor(this.sides * Math.random()) + 1;
+            }
+        }
+        
+        const promise = new Promise( (resolve,reject) => {
+            const n = dice.roll();
+            setTimeout(() => {
+                (n > 1) ? resolve(n) : reject(n);
+            }, n*1000);
+        });
+        
+    </script>
+    
+</html>
