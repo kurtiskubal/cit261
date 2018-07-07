@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Dice Constructor</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+    
+        const Dice = function(sides=6){
+            this.sides = sides;
+            this.roll = function() {
+                return Math.floor(this.sides * Math.random() + 1)
+            }
+        }
+        
+        const redDice = new Dice();
+        
+        
+    </script>
+    
+</html>

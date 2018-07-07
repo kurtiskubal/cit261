@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Dice Class</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+    
+        class Dice {
+            constructor(sides=6) {
+                this.sides = sides;
+            }
+            
+            roll() {
+                return Math.floor(this.sides * Math.random() + 1)
+            }
+            
+        }
+        
+        const blueDice = new Dice(20);
+        
+        console.log(blueDice.sides);
+        
+        console.log(blueDice.roll());
+        
+    </script>
+    
+</html>

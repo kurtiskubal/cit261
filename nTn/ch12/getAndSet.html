@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Getter and Setters</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        const me = { name: 'DAZ'};
+        
+        me.age = 21;
+        
+        console.log(me.age);
+        
+        Object.getOwnPropertyDescriptor(me, 'name');
+        
+        Object.defineProperty(me, 'eyeColor', { value: 'blue', writable: false, enumerable: true });
+    
+        me.eyeColor = 'purple';
+        
+        console.log(me.eyeColor);
+        
+        
+        
+        
+    </script>
+    
+</html>

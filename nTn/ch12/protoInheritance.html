@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Prototypal Inheritance</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        class Turtle {
+            constructor(name) {
+                this.name = name;
+                this.weapon = 'hands';
+            }
+            sayHi() {
+                return `Hi dude, my name is ${this.name}`;
+            }
+            
+            attack(){
+                return `Feel the power of my ${this.weapon}!`;
+            }
+        }
+    
+        const leo = new Turtle('Leonardo');
+        
+        console.log(leo.name);
+        
+        console.log(leo.sayHi());
+        
+        const raph = new Turtle('Raphael');
+        
+        const don = new Turtle('Donatello');
+        
+        console.log(leo.attack());
+        
+        console.log(raph.attack());
+        
+        console.log(don.attack());
+        
+        leo.weapon = 'Katana Blades';
+        
+        raph.weapon = 'Sai';
+        
+        don.weapon = 'Bo Staff';
+        
+        console.log(leo.attack());
+        
+        console.log(raph.attack());
+        
+        console.log(don.attack());
+        
+        console.log(leo);
+        
+    </script>
+    
+</html>
