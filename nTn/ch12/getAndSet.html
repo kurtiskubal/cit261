@@ -32,6 +32,25 @@
         
         console.log(me.eyeColor);
         
+        me.retirementAge = 65;
+        
+        Object.defineProperty(me, 'yearToRetirement',{
+            get() {
+                if(this.age > this.retirementAge) { return 0;}
+                else { return this.retirementAge - this.age; }
+            },
+            set(value) {
+                this.age = this.retirementAge - value;
+                return value;
+            }
+        });
+        
+        console.log(me.yearToRetirement);
+        
+        me.yearToRetirement = 10;
+        
+        console.log(me.yearToRetirement);
+        
         
         
         

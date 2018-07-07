@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Basic Fetch Example</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        fetch('https://example.com/data')
+        .then( // code that handles the response )
+        .catch( // code that runs if the server returns the error )
+            
+        const url = 'https:example.com/data';
+            
+        fetch(url)
+        .then((response) => {
+            if(response.ok) {
+                return response;
+            }
+            throw Error(response.statusText);
+        })
+        .then( response => )
+        .catch ( error => console.log('There was an error!') )
+    
+    </script>
+    
+</html>

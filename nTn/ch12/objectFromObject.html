@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Create Object from Object</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        const Human = {
+            arms: 2,
+            legs: 2,
+            walk() { console.log('Walking'); }
+        }
+        
+        const lois = Object.create(Human);
+        
+        console.log(lois.arms);
+        
+        console.log(lois.legs);
+        
+        lois.walk();
+        
+        console.log(Human.isPrototypeOf(lois));
+    
+    </script>
+    
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <title>Dice Get and Set</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        
+    
+    </body>
+
+    <script>
+        
+        class Dice {
+            constructor(sides=6){
+                Object.defineProperty(this, 'sides', {
+                    get() {
+                        return `This dice has ${sides} sides`;
+                    },
+                    set(value) {
+                        if(value > 0) {
+                            sides = value;
+                            return sides;
+                        }
+                        else {
+                            throw new Error('The number of sides must be positive');
+                        }
+                    }
+                });
+                this.roll = function() {
+                    return Math.floor(sides * Math.random() + 1)
+                }
+            }
+        }
+        
+        const yellowDice = new Dice;
+        
+        console.log(yellowDice.sides);
+        
+        yellowDice.sides = 10;
+        
+        console.log(yellowDice.sides);
+        
+        yellowDice.sides = 0;
+        
+    
+    </script>
+    
+</html>
