@@ -13,30 +13,37 @@
             height: 25px;
             padding: 0;
             
+            
         }
         
         #greenButton {
             
             background-color: lightgreen;
+            border: 2px solid lightgreen;
         }
         
         #redButton {
             
             background-color: red;
+            border: 2px solid red;
             
         }
         
         #yellowButton {
             
             background-color: yellow;
+            border: 2px solid yellow;
             
         }
         
         #blueButton {
             
             background-color: blue;
+            border: 2px solid blue;
             
         }
+        
+        
         
         #mainArea {
             
@@ -63,6 +70,11 @@
     <script>
     
         
+        document.getElementById("blueButton").addEventListener("touchstart", myTest(this));
+    
+        function myTest(elem) {
+        console.log(elem.id);
+        }
         
     </script>
     
