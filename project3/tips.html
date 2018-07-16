@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    
+    <title>Tip and Bill Splitter</title>
+    
+    <style>
+    
+    </style>
+    
+    </head>
+    
+    <body>
+        
+        <input id = "people">
+    
+        <select id = "tips">
+            <option>15%</option>
+            <option>20%</option>
+            <option>25%</option>
+            <option>30%</option>
+        </select>
+    
+        <input id = "balance">
+        
+        <div id = "balance" ></div>
+        
+        <div id = "ttotal" ></div>
+        
+        <div id = "eachBill" ></div>
+        
+        <div id = "eachTip" ></div>
+        
+    </body>
+
+    <script>
+        
+         document.getElementById("people").addEventListener("input", calculate);
+        
+         document.getElementById("tips").onchange = function() {calculate()};
+        
+         document.getElementById("balance").onchange = function() {calculate()};
+        
+        function calculate() {
+            console.log("Things have been changed");
+        }
+        
+    </script>
+    
+</html>
