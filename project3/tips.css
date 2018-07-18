@@ -1,0 +1,26 @@
+ h3 {
+            margin-left: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        input {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30%;
+        }
+        
+        select {
+            margin-left: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            padding-top: 10px;
+        }
+        
+        body {
+            background-color: azure;
+        }

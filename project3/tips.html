@@ -6,22 +6,26 @@
     
     <title>Tip and Bill Splitter</title>
     
-    <style>
-    
-    </style>
+    <link rel="stylesheet" type="text/css" href="tips.css"
     
     </head>
     
     <body>
         
+        <h3>Number of People</h3>
+        
         <input id = "numberOfTimesSplit">
     
+        <h3>Tip Percentage</h3>
+        
         <select id = "tips">
             <option>15%</option>
             <option>20%</option>
             <option>25%</option>
             <option>30%</option>
         </select>
+        
+        <h3>Balance</h3>
     
         <input id = "balance">
         
@@ -29,7 +33,7 @@
         
         <div id = "tipDisplay" ></div>
         
-        <div id = "splitBalanceDiplay" ></div>
+        <div id = "splitBalanceDisplay" ></div>
         
         <div id = "splitTipDisplay" ></div>
         
@@ -37,57 +41,6 @@
         
     </body>
 
-    <script>
-        
-         document.getElementById("numberOfTimesSplit").addEventListener("input", calculate);
-        
-         document.getElementById("tips").onchange = function() {calculate()};
-        
-         document.getElementById("balance").addEventListener("input", calculate);
-        
-        function calculate() {
-            
-            const tipList = document.getElementById("tips");
-            
-            const numPeep = document.getElementById("numberOfTimesSplit").value;
-            const tipPercent = tipList.options[tipList.selectedIndex].value;
-            const bal = document.getElementById("balance").value;
-            var tipDeci = 0;
-            
-            switch (tipPercent) {
-                case "15%":
-                    tipDeci = 0.15;
-                    break;
-                case "20%":
-                    tipDeci = 0.20;
-                    break;
-                case "25%":
-                    tipDeci = 0.25;
-                    break;
-                case "30%":
-                    tipDeci = 0.30;
-                    break;
-            }
-            
-            const tip = bal * tipDeci;
-            const splitBal = bal / numPeep;
-            const splitTip = tip / numPeep;
-            const comb = splitBal + splitTip;
-            
-            //Math.round(num * 100) / 100
-            
-            if(isNaN(bal) == true || isNaN(numPeep) == true) {
-                document.getElementById("balanceDisplay").innerHTML = "Please enter a number for both fields";
-            }
-            else if (bal < 0 || numPeep < 0){
-                document.getElementById("balanceDisplay").innerHTML = "Please enter a positive number";
-            }
-            else {
-                            
-            }
-            
-        }
-        
-    </script>
+    <script src = "tips.js"></script>
     
 </html>
